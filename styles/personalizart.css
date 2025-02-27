@@ -1,0 +1,151 @@
+/* Banner */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+.banner header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 50px;
+}
+
+.banner h1 {
+    position: absolute;
+    color: #ffb500;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Personalizart */
+.banner section,
+.personalizart,
+#reviews section {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px; 
+    max-width: 80%; 
+    margin: 0 auto; 
+    flex-wrap: wrap; 
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+article img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+.producto {
+    color: #8B4513;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    background-color: #ffb500;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.botones {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Reviews */
+
+#reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#reviews > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#reviews article {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+}
+
+#reviews article img {
+    cursor: pointer;
+}
+
+.estrellas {
+    color: #ffb500;
+    font-weight: bold;
+    font-size: x-large;
+}
+/* Videos */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 553px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-container img,
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    will-change: opacity;
+}
+
+.video-container:hover img {
+    opacity: 0;
+}
+
+.video-container:hover video {
+    opacity: 1;
+}
+
+.footersection {
+    display: block;
+}

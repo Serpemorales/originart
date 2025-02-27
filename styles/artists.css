@@ -1,0 +1,207 @@
+.artistsheader {
+    display: block;
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 20px;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Sidebar (Aside) */
+aside {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+aside header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+aside section {
+    margin-bottom: 20px;
+}
+
+aside form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a0d0d;
+    color: #ffb500;
+}
+
+aside h2 {
+    font-size: 1.2rem;
+    color: #ffb500;
+    border-bottom: 2px solid #ffb500;
+    padding-bottom: 5px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    color: #ffb500;
+}
+
+aside ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+aside ul li label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+aside input[type="text"] {
+    border: 2px solid #ffb500;
+    padding: 2px;
+    text-align: left;
+    font-size: 15px;
+    color: #AD6937;
+    background-color: #FEEFC1;
+}
+  
+
+/* Artists Section */
+main section {
+    flex: 1;
+}
+
+main section header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainheader {
+    padding: 5px 0px;
+}
+
+main section h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffb500;
+}
+
+
+.sort {
+    color: #C2A793;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #8B4513;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.flecha {
+    background-color: #F4C430;
+    border: none;
+    padding: 10px 20px;
+    width: 36px;
+    height: 36px;
+    color: #1a0d0d;
+    font-weight: bold;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* Artist Grid */
+main section section {
+    display: flex;
+    margin-top: 20px;
+}
+
+main section article {
+    transition: border 0.3s;
+    width: 50%;
+}
+
+.premium article {
+    background-color: #ffb500;
+    padding: 10px;
+}
+
+.premium img {
+    width: 100%;
+    height: auto;
+}
+.premium article:first-child {
+    padding-right: 20px;
+}
+
+.premium article:last-child {
+    padding-left: 20px;
+}
+
+.normalpic:hover,
+.premium article:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 4px #ffb500;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+main section article img {
+    width: 100%;
+    display: block;
+}
+
+.normalpic img {
+    width: 100%;
+    height: 100%
+}
+
+/* Pagination */
+main section footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.botonp {
+    background-color: #ffb500;
+    line-height: 5px;
+    padding: 8px;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 30px;
+}
+
+#boton1{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.botonizq {
+    margin-left: -15px;
+}
+
+button:hover{
+    opacity: 70%;
+    transition-duration: 0.3s;
+}

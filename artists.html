@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/global/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/artists.css" type="text/css">
+    <link rel="stylesheet" href="styles/originart.css" type="text/css">
+    <title>Artists</title>
+</head>
+<body>
+    <header>
+        <section>
+            <a href="index.html">
+                <img src="assets/images/global/logo.png" alt="Logo de OriginART" width="80" heigh="80">
+            </a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="personalizart.html">PERSONALIZART</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#forum">FORUM</a></li>
+            </ul>
+        </nav>
+        <section>
+            <ul>
+                <li><a href="#cart"><img src="assets/images/global/shopping.png" alt="Cart" width="36" height="36"></a></li>
+                <li><a href="#profile"><img src="assets/images/global/user.png" alt="Profile" width="36" height="36"></a></li>
+                <li><a href="#language"><img src="assets/images/global/language.png" alt="Language" width="36" height="36"></a></li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <!-- Sidebar Section -->
+        <aside>
+            <header class="artistsheader">
+                <img src="assets/images/artists/logo.png" alt="title" width="225" height="54"><br>
+                <img src="assets/images/artists/banner.png" alt="title" width="352" height="185">
+            </header>
+            <section>
+                <form>
+                    <input type="text" id="artist-search" name="artist-search" placeholder="Search for an artist">
+                </form>
+            </section>
+            <section>
+                <h2>ART STYLE</h2>
+                <ul>
+                    <li><input type="checkbox" id="traditional" name="art-style"><label for="traditional">Traditional</label></li>
+                    <li><input type="checkbox" id="digital" name="art-style"><label for="digital">Digital</label></li>
+                    <li><input type="checkbox" id="pixel" name="art-style"><label for="pixel">Pixel Art</label></li>
+                    <li><input type="checkbox" id="mixed-media" name="art-style"><label for="mixed-media">Mixed Media</label></li>
+                </ul>
+            </section>
+            <section>
+                <h2>ART TYPE</h2>
+                <ul>
+                    <li><input type="checkbox" id="sketch" name="art-type"><label for="sketch">Sketch</label></li>
+                    <li><input type="checkbox" id="avatar" name="art-type"><label for="avatar">Avatar</label></li>
+                    <li><input type="checkbox" id="full-color" name="art-type"><label for="full-color">Full Color</label></li>
+                    <li><input type="checkbox" id="chibi" name="art-type"><label for="chibi">Chibi</label></li>
+                </ul>
+            </section>
+            <section>
+                <h2>THEME</h2>
+                <ul>
+                    <li><input type="checkbox" id="fantasy" name="theme"><label for="fantasy">Fantasy</label></li>
+                    <li><input type="checkbox" id="sci-fi" name="theme"><label for="sci-fi">Sci-Fi</label></li>
+                    <li><input type="checkbox" id="horror" name="theme"><label for="horror">Horror</label></li>
+                    <li><input type="checkbox" id="slice-of-life" name="theme"><label for="slice-of-life">Slice of Life</label></li>
+                    <li><input type="checkbox" id="romance" name="theme"><label for="romance">Romance</label></li>
+                </ul>
+            </section>
+            <section>
+                <h2>PRICING RANGE</h2>
+                <ul>
+                    <li><input type="checkbox" id="under-50" name="price"><label for="under-50">Under 50€</label></li>
+                    <li><input type="checkbox" id="50-to-100" name="price"><label for="50-to-100">50€ to 100€</label></li>
+                    <li><input type="checkbox" id="100-to-200" name="price"><label for="100-to-200">100€ to 200€</label></li>
+                    <li><input type="checkbox" id="over-200" name="price"><label for="over-200">Over 200€</label></li>
+                </ul>
+            </section>
+        </aside>
+        <!-- Sidebar Section End -->
+        <!-- Main Section -->
+        <section>
+            <header class="mainheader">
+                <h1>ARTISTS</h1>
+                <button class="sort" type="button">SORT</button>
+            </header>
+            <section class="premium">
+                <article>
+                    <img src="assets/images/artists/premium1.png" alt="Premium 1" width="400" height="300">
+                </article>
+                <article>
+                    <img src="assets/images/artists/premium2.png" alt="Premium 2" width="400" height="300">
+                </article>
+            </section>
+            <section>
+                <article class="normalpic">
+                    <img src="assets/images/artists/free1.png" alt="Free 1" width="400" height="300">
+                </article>
+                <article class="normalpic">
+                    <img src="assets/images/artists/free2.png" alt="Free 2" width="400" height="300">
+                </article>
+                <article class="normalpic">
+                    <img src="assets/images/artists/free3.png" alt="Free 3" width="400" height="300">
+                </article>
+                <article class="normalpic">
+                    <img src="assets/images/artists/free4.png" alt="Free 4" width="400" height="300">
+                </article>
+            </section>
+            <article id="boton1">
+                <button class="botonizq botonp" onclick="prevImage('section1')">◀</button>
+                <button class="botonp" onclick="nextImage('section1')">▶</button>
+            </article>
+        </section>
+    </main>
+    <!-- Main Section End -->
+    <!-- Footer Section End -->
+    <footer>
+        <section>
+            <img src="assets/images/global/title.png" alt="title" width="179" height="43">
+            <ul class="social">
+                <li><a href="#x"><img src="assets/images/global/x.png" alt="Twitter" width="25" height="25"></a></li>
+                <li><a href="#instagram"><img src="assets/images/global/instagram.png" alt="Instagram" width="25" height="25"></a></li>
+                <li><a href="#facebook"><img src="assets/images/global/facebook.png" alt="Facebook" width="25" height="25"></a></li>
+                <li><a href="#youtube"><img src="assets/images/global/youtube.png" alt="YouTube" width="25" height="25"></a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>FOR ARTISTS</h3>
+            <ul class="footer-links">
+                <li><a href="#freelancer">Become a Freelancer</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#pro">OriginART PRO</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>COMPANY</h3>
+            <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#affiliates">Affiliates</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>CONTACT</h3>
+            <ul class="footer-links">
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#service">Customer Service</a></li>
+            </ul>
+        </section>
+        <section id="lastsection">
+            <p id="copyright">&copy; OriginART International 2024</p>
+        </section>
+    </footer>
+    <!-- Footer Section End -->
+</body>
+</html>

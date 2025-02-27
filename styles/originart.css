@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #1a0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a0d0d;
+    padding: 10px 50px;
+    border-bottom: 2px solid #ffb500;
+}
+
+header nav ul,
+header section ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a,
+header section ul li a {
+    text-decoration: none;
+    color: #ffb500;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+header li:hover{
+    opacity: 50%;
+}
+
+/* Evitar efecto hover en iconos de header y footer */
+header section ul li img,
+footer ul li a img {
+    transition: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Footer */
+footer {
+    background-color: #1a0d0d;
+    font-weight: bold;
+    color:#8B4513;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #ffb500;
+    background-color: #ffb500;
+}
+
+footer section {
+    margin-right: 10px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    overflow: visible !important; /* Permite que las imágenes sobresalgan sin corte */
+    list-style: none;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+.social {
+    justify-content: left;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: block
+}
+
+footer section {
+    position: relative;
+    width: 15%;
+}
+
+.lastsection {
+    margin-right: 0;
+}
+
+footer p {
+
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+    color: #8B4513;
+    font-weight: bold;
+
+}
+
+@keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    5% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo {
+    animation: girar 30s linear infinite;
+  }

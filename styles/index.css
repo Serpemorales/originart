@@ -1,0 +1,159 @@
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner .banner-image {
+    width: 100%;
+    height: auto; 
+}
+
+.banner .banner-title,
+.banner .welcome-text,
+.banner .banner-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.banner .welcome-text {
+    top: 10%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffb500;
+    margin: 0;
+}
+
+.banner .banner-title {
+    height: 30%;
+    width: auto;
+    top: 27%;
+}
+
+.banner .banner-form {
+    top: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner input[type="text"] {
+    padding: 2px;
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #AD6937;
+    background-color: #FEEFC1;
+}
+
+/* Main Section */
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+    overflow: hidden; /* Evita la barra de desplazamiento lateral */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;;
+}
+
+h2 {
+    color: #C2A793;
+    font-size: 1.7rem;
+    width: 167px;
+    margin-bottom: 10px;
+    background-color: #8B4513;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+#premium{
+    background-color: #ffb500;
+    color: #8B4513;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    overflow: visible !important; /* Permite que las imágenes sobresalgan sin corte */
+    list-style: none;
+}
+
+main ul li {
+    margin-right: 20px;
+}
+
+/* Ajustar el efecto hover en imágenes de los artículos */
+ul li img {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+ul li img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 4px #ffb500;
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#section2 img,
+#section3 img{
+    opacity: 50%;
+}
+
+#section2 img:hover,
+#section3 img:hover{
+    opacity: 100%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+/* Buttons */
+button {
+    line-height: 5px;
+    padding: 8px;
+    font-size: 1.4rem;
+    background-color: #8B4513;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: #1a0d0d;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.botonp {
+    background-color: #ffb500;
+}
+
+#boton1,
+#boton2,
+#boton3 {
+    display: inline-block;
+    padding: 10px;
+}
+
+.botonizq {
+    margin-left: -15px;
+}
+
+button:hover{
+    opacity: 70%;
+    transition-duration: 0.3s;
+}

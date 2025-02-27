@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/global/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/personalizart.css" type="text/css">
+    <link rel="stylesheet" href="styles/originart.css" type="text/css">
+    <title>Personalizar</title>
+</head>
+<body>
+    <!-- Script para los videos -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".preview-video").forEach((video) => {
+                video.play().catch(error => console.log("Autoplay bloqueado:", error));
+            });
+        });
+        </script>
+
+    <!-- Script para los audios -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleccionar todas las imágenes dentro de #reviews con data-audio
+            document.querySelectorAll("#reviews img[data-audio]").forEach(img => {
+                img.addEventListener("click", function () {
+                    let audioSrc = this.getAttribute("data-audio");
+        
+                    // Si ya hay un audio reproduciéndose, detenerlo
+                    if (window.currentAudio) {
+                        window.currentAudio.pause();
+                        window.currentAudio.currentTime = 0;
+                    }
+        
+                    // Crear un nuevo objeto de audio y reproducirlo
+                    let audio = new Audio(audioSrc);
+                    audio.play();
+                    window.currentAudio = audio; // Guardar referencia del audio activo
+                });
+            });
+        });
+        </script>
+
+    <!-- Header Section -->
+    <header>
+        <section>
+            <a href="index.html">
+                <img class="logo" src="assets/images/global/logo.png" alt="Logo de OriginART" width="80" heigh="80">
+            </a>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="artists.html">ARTISTS</a></li>
+                <li><a href="personalizart.html">PERSONALIZART</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#forum">FORUM</a></li>
+            </ul>
+        </nav>
+        <section>
+            <ul>
+                <li><a href="#cart"><img src="assets/images/global/shopping.png" alt="Cart" width="36" height="36"></a></li>
+                <li><a href="#profile"><img src="assets/images/global/user.png" alt="Profile" width="36" height="36"></a></li>
+                <li><a href="#language"><img src="assets/images/global/language.png" alt="Language" width="36" height="36"></a></li>
+            </ul>
+        </section>
+    </header>
+     <!-- Header End -->
+            <!-- Banner Section -->
+            <section class="banner">
+                <header>
+                    <h1>PERSONALIZE YOUR PRODUCT</h1>
+                    <img src="assets/images/personalizart/banner.png" alt="t-shirt banner" width="1306" height="257">
+                </header>
+            </section>
+            <!-- Banner Section End-->
+    <!-- Personalize Section -->
+    <section class="personalizart">
+        <article>
+            <div class="video-container">
+                <img src="assets/images/personalizart/shirts.png" alt="T-Shirts">
+                <video class="preview-video" src="assets/videos/shirts-preview.mp4" muted loop playsinline></video>
+            </div>
+            <article class="botones">
+                <button class="producto" type="button">I ALREADY HAVE A DESIGN</button>
+            </article>
+        </article>
+        <article>
+            <div class="video-container">
+                <img src="assets/images/personalizart/work.png" alt="Artists working">
+                <video class="preview-video" src="assets/videos/work-preview.mp4" muted loop></video>
+            </div>
+            <article class="botones">
+                <button class="producto" type="button">I DON'T HAVE A DESIGN</button>
+            </article>
+        </article>
+    </section>
+            <!-- Personalize Section End -->
+            <!-- Reviews Section -->
+            <section id="reviews">
+                <section>
+                    <article>
+                        <img src="assets/images/personalizart/user1.png" alt="@TempusUmbra Profile" data-audio="assets/audio/user1.mp3">
+                        <p><strong>@TempusUmbra</strong></p>
+                        <p class="estrellas">★★★★★</p>
+                        <blockquote>Originart has an excellent service! I'm really happy with both, the design that I commissioned to the artist and the product I customized. Thank you!</blockquote>
+                    </article>
+            
+                    <article>
+                        <img src="assets/images/personalizart/user2.png" alt="@HappyOWO Profile" data-audio="assets/audio/user2.mp3">
+                        <p><strong>@HappyOWO</strong></p>
+                        <p class="estrellas">★★★★★</p>
+                        <blockquote>I didn't expect them to work so fast, but they did! The product quality is good and the artist was friendly through the process. Will come again!</blockquote>
+                    </article>
+            
+                    <article>
+                        <img src="assets/images/personalizart/user3.png" alt="@RandoDude Profile" data-audio="assets/audio/user3.mp3">
+                        <p><strong>@RandoDude</strong></p>
+                        <p class="estrellas">★★★★☆</p>
+                        <blockquote>The artist? Fast. The product? Well, the mug was broken when it got to me, but they were kind enough to send a new one, so I still totally recommend their service!</blockquote>
+                    </article>
+                </section>
+            </section>
+        </main>
+        <!-- Reviews Section End -->
+        <!-- Footer Section End -->
+        <footer>
+            <section class="footersection">
+                <img src="assets/images/global/title.png" alt="title" width="179" height="43">
+                <ul class="social">
+                    <li><a href="#x"><img src="assets/images/global/x.png" alt="Twitter" width="25" height="25"></a></li>
+                    <li><a href="#instagram"><img src="assets/images/global/instagram.png" alt="Instagram" width="25" height="25"></a></li>
+                    <li><a href="#facebook"><img src="assets/images/global/facebook.png" alt="Facebook" width="25" height="25"></a></li>
+                    <li><a href="#youtube"><img src="assets/images/global/youtube.png" alt="YouTube" width="25" height="25"></a></li>
+                </ul>
+            </section>
+            <section class="footersection">
+                <h3>FOR ARTISTS</h3>
+                <ul class="footer-links">
+                    <li><a href="#freelancer">Become a Freelancer</a></li>
+                    <li><a href="#forum">Forum</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#pro">OriginART PRO</a></li>
+                </ul>
+            </section>
+            <section class="footersection">
+                <h3>COMPANY</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#affiliates">Affiliates</a></li>
+                </ul>
+            </section>
+            <section class="footersection">
+                <h3>CONTACT</h3>
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#service">Customer Service</a></li>
+                </ul>
+            </section>
+            <section id="lastsection">
+                <p id="copyright">&copy; OriginART International 2024</p>
+            </section>
+        </footer>
+        <!-- Footer Section End -->
+    </body>
+</html> 
