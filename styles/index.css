@@ -131,7 +131,7 @@ button {
     width: 40px;
     height: 40px;
     border: none;
-    color: #1a0d0d;
+    color: #FFFCF2;
     cursor: pointer;
     border-radius: 100%;
     text-align: center;
@@ -140,6 +140,7 @@ button {
 
 .botonp {
     background-color: #ffb500;
+    color: #1a0d0d;
 }
 
 #boton1,
